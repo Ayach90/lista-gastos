@@ -34,9 +34,9 @@ const Icono = styled(ArrowIcon)`
 `;
 
 const GoBack = ({ path = "/" }) => {
-  const history = useNavigate();
+  const navigate = useNavigate();
   return (
-    <Btn onClick={() => history(path)}>
+    <Btn onClick={() => navigate(path)}>
       <Icono />
     </Btn>
   );
